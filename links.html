@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>能登半島地震 土砂災害 Web教材リンク集</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --fg: #e9eef6;
+      --muted: #a8b3c7;
+      --card: #121830;
+      --accent: #6aa6ff;
+      --accent-2: #9be2ff;
+    }
+    html, body {
+      margin: 0; padding: 0;
+      background: linear-gradient(180deg, var(--bg), #0e1430 40%, #0d1a2d);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN",
+                   "Yu Gothic", "Noto Sans JP", "Helvetica Neue", Arial, "Apple Color Emoji",
+                   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(22px, 4.5vw, 34px);
+      margin: 8px 0 4px;
+      letter-spacing: .02em;
+    }
+    p.lead {
+      color: var(--muted);
+      margin: 0 0 14px;
+      font-size: 15px;
+    }
+    .panel {
+      background: rgba(18, 24, 48, 0.75);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      backdrop-filter: blur(6px);
+    }
+    .search {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .search input {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color: var(--fg);
+      font-size: 16px;
+      outline: none;
+    }
+    .search input::placeholder { color: #9aa7bd; }
+    ul.links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul.links li {
+      border-bottom: 1px dashed rgba(255,255,255,.08);
+    }
+    ul.links li:last-child { border-bottom: none; }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      color: var(--accent-2);
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(106,166,255, .12);
+      border: 1px solid rgba(106,166,255, .25);
+      color: var(--accent);
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">学習用リンク集</div>
+      <h1>能登半島地震・土砂災害 Web地図リンク集</h1>
+      <p class="lead">CSVの「タイトル」と「URL」から自動生成しています。検索ボックスで絞り込みもできます。</p>
+    </header>
+
+    <div class="panel">
+      <div class="search">
+        <input id="q" type="search" placeholder="キーワードで絞り込み（例：土砂、崩壊、航空写真、Slope、GSI など）">
+      </div>
+      <ul id="list" class="links">
+          <li class="py-2"><a href="https://maps.qchizu.xyz/#11/37.363881/137.134094/&amp;base=std&amp;ls=std%7C20240106noto_suzu_wazimahigashi_houkaichi%7C20240115noto_wazimanaka_houkaichi&amp;disp=111&amp;lcd=20240115noto_wazimanaka_houkaichi&amp;vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&amp;d=m" target="_blank" rel="noopener noreferrer">能登半島地震で発生した土砂災害（全国Q地図）</a></li>
+          <li class="py-2"><a href="https://maps.qchizu.xyz/#15/37.346740/136.911836/&amp;base=std&amp;ls=std%7C20240106noto_suzu_wazimahigashi_houkaichi%7C20240115noto_wazimanaka_houkaichi&amp;disp=111&amp;lcd=20240115noto_wazimanaka_houkaichi&amp;vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&amp;d=m" target="_blank" rel="noopener noreferrer">輪島市市ノ瀬で発生した地すべり</a></li>
+          <li class="py-2"><a href="https://maps.qchizu.xyz/#16/37.346543/136.912715/&amp;base=std&amp;ls=std%7C20240102noto_0405_0426do%7C20240106noto_suzu_wazimahigashi_houkaichi%7C20240115noto_wazimanaka_houkaichi&amp;blend=0&amp;disp=1110&amp;lcd=20240102noto_0405_0426do&amp;vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&amp;d=m" target="_blank" rel="noopener noreferrer">市ノ瀬地すべりの空中写真</a></li>
+          <li class="py-2"><a href="https://youtu.be/K8vt2msKxL8" target="_blank" rel="noopener noreferrer">市ノ瀬の土石流</a></li>
+          <li class="py-2"><a href="https://maps.qchizu.xyz/maplibre/#15.54/37.438816/137.107476/0/52" target="_blank" rel="noopener noreferrer">町野町の山地の立体表示</a></li>
+          <li class="py-2"><a href="https://maps.qchizu.xyz/#18/37.421250/137.077065/&amp;base=std&amp;ls=std%7Cforestgeo_17_ishikawa_noto_dem_2024_dem2cs%7C94dem_17p_ishikawa_f_02_g_dem2cs%7C20240102noto_0405_0426do%7C20240923rain_wajimatobu_0924do_sokuho&amp;blend=0000&amp;disp=11111&amp;lcd=20240923rain_wajimatobu_0924do_sokuho&amp;vs=c1g1j0h0k0l0u0t0z0r0s0m0f1&amp;d=m" target="_blank" rel="noopener noreferrer">町野町の豪雨による表層崩壊</a></li>
+      </ul>
+    </div>
+
+    <footer>夢ナビ講義研究室訪問・地形を手掛りに地域の防災を考える・能登地震の現場から（2025年10月4日）教材リンク集</footer>
+  </div>
+
+  <script>
+    const q = document.getElementById('q');
+    const list = document.getElementById('list');
+    q.addEventListener('input', () => {
+      const term = q.value.toLowerCase();
+      for (const li of list.children) {
+        const text = li.textContent.toLowerCase();
+        li.style.display = text.includes(term) ? '' : 'none';
+      }
+    });
+  </script>
+</body>
+</html>
