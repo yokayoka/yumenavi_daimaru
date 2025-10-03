@@ -100,6 +100,29 @@
       color: var(--accent);
       font-size: 12px;
     }
+  
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: rgba(106,166,255, .18);
+      border: 1px solid rgba(106,166,255, .45);
+      color: var(--fg);
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform .05s ease, background .2s ease, color .2s ease;
+    }
+    .btn:hover {
+      background: rgba(155,226,255, .2);
+      color: var(--accent-2);
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+    .cta-note {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 6px;
+    }
   </style>
 </head>
 <body>
@@ -109,6 +132,12 @@
       <h1>能登半島地震・土砂災害 Web地図リンク集</h1>
       <p class="lead">CSVの「タイトル」と「URL」から自動生成しています。検索ボックスで絞り込みもできます。</p>
     </header>
+
+    <div class="panel" style="margin-top:8px; margin-bottom:16px; text-align:center">
+      <a class="btn" href="docs/yumenavi_daimaru.pdf" download target="_blank" rel="noopener">教材PDFをダウンロード（yumenavi_daimaru.pdf）</a>
+      <div class="cta-note">教材は <code>docs/yumenavi_daimaru.pdf</code> にからダウンロードできます。</div>
+    </div>
+
 
     <div class="panel">
       <div class="search">
